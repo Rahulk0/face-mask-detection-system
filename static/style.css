@@ -1,0 +1,292 @@
+/* Set background color of navbar */
+.navbar {
+  padding-left: 50px; 
+  padding-right: 70px;
+background-color:white;
+
+}
+
+/* Set color of navbar links */
+
+.navbar a {
+color: #050505;
+transition: all 0.3s ease;
+}
+
+/* Set color and style of active navbar link */
+.navbar a.active,
+.navbar a:hover {
+color: #007bff;
+font-size: 20px;
+font-weight: bold;
+}
+.navbar .dropdown-menu {
+background-color: transparent;
+border: none;
+box-shadow: none;
+}
+
+.navbar .dropdown-menu a {
+color: #212529;
+transition: all 0.3s ease;
+}
+
+.navbar .dropdown-menu a.active,
+.navbar .dropdown-menu a:hover {
+color: #007bff;
+font-size: 16px;
+font-weight: bold;
+display: block;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Set style of navbar icons */
+.navbar .fa {
+margin-right: 5px;
+color:#007bff;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.card {
+  margin-top: 20px;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+.card-body h2{
+  color:#18497d;
+  font-size: 26px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-body h5{
+  color:#18497d;
+  font-size: 26px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-body p {
+  color: rgb(59, 57, 57);
+  font-size: 18px;
+   font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.card-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper {
+  width: 40%;
+}
+.card-img-top{
+  height:50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-text-span{
+  color: orange;
+  font-weight:lighter;
+  font-family: cursive;
+}
+.card-body img{
+  object-fit: cover;
+}
+#services {
+  margin-top: 100px;
+}
+
+#services h1 {
+  color:#18497d;
+  font-size: 26px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media screen and (min-width: 992px) {
+  .card {
+    height: 100%;
+  }
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0062cc;
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.contact-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 40%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: rotate(45deg);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact-card:hover::before {
+  opacity: 1;
+}
+.contact-card .card-body h5{
+  text-align: center;
+}
+.contact-card .card-body p {
+  text-align: center;
+}
+
+.contact-card .card-body {
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card:hover .card-body {
+  transform: translateY(-10px);
+}
+
+.contact-card .list-group-item {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card .list-group-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color:#0062cc;
+  transition: width 0.3s ease-in-out;
+}
+
+.contact-card .list-group-item:hover::before {
+  width: 100%;
+}
+
+.contact-card:hover .list-group-item {
+  transform: translateX(10px);
+}
+
+.contact-card .list-group-item:last-child::before {
+  display: none;
+}
+
+.contact-card .card-text {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card .card-text::after {
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  color:#0062cc;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact-card:hover .card-text::after {
+  opacity: 1;
+}
+
+.contact-card:hover .card-text {
+  transform: translateX(-10px);
+}
+.contact-card .heart {
+  
+  animation: heartbeat 1s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#cases {
+  margin-top: 50px;
+}
+
+#cases h1 {
+  color: #18497d;
+  font-size: 26px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cases-card {
+  background:none;
+  box-shadow:none;
+  transition: transform 0.5s ease;
+}
+
+.cases-card:hover {
+  transform: translateY(-10px);
+}
+
+.img-case {
+  transition: opacity 0.5s ease;
+  width: auto;
+  height: auto;
+}
+
+.img-case:hover {
+  opacity: 0.8;
+}

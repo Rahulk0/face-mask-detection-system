@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Face Mask Detection</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" integrity="sha512-eKxrkKvXt+ZfcnsLvlB7VwDdCvtnpVJy+MlwxBfVj+w9Xg/eP7oZcqpdGnAicfWgdkmLPyPwojzrd0Q8kT6U9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-XOYZtT2WkX1yDd2zgKvyaC0HJ8ABlZmSyGjL0kULxuk1W8XNUKTcrE7S+Iv5i5jK" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="static/style.css">
+      <link rel="icon" href="static/fav.ico">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <a class="navbar-brand" href="/" style="font-size:large;color:#18497d;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Mask Detection</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="/"><i class="fa fa-home"></i> Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-cog"></i> Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="/upload-image"> <i class="fa fa-picture-o"></i>Detect Image</a>
+                     <a class="dropdown-item" href="/upload-video"> <i class="fa  fa-file-video-o"></i>Detect Video</a>
+                     <a class="dropdown-item" href="/opencam">Real Time (Webcam)</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact"><i class="fa fa-phone"></i> Contact Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about"><i class="fa fa-info"></i> About</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="card bg-transparent">
+         <div class="row no-gutters">
+            <div class="col-md-8">
+               <div class="card-body">
+                  <h5 class="card-title">Face Mask Detector</h5>
+                  <p class="card-text">A <span class="card-text-span">proper/improper face mask  </span> detection system is an essential tool in ensuring public safety during the COVID-19 pandemic.By using computer vision and machine learning algorithms, we can accurately detect whether a person is wearing a <span class="card-text-span">mask properly or improperly</span>.The system can be integrated into a web application, allowing users to upload images or use their webcam to perform <span class="card-text-span">real-time detection</span>. The application can also provide visual feedback to the user, such as highlighting areas where the mask is not covering the face properly or displaying a message indicating whether the mask is being worn correctly.With the help of a proper/improper face mask detection system, we can promote healthy habits and prevent the spread of the virus.</p>
+                  <a href="#about" class="btn btn-primary" >Explore</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <img src="static/face.jpg" class="card-img" alt="Explore">
+            </div>
+         </div>
+      </div>
+      <div class="card bg-transparent" id="about">
+         <div class="card-body text-center">
+            <h5 class="card-title mb-4">What does Sytem do?</h5>
+            <p class="card-text">With the growing number of COVID-19 victims around the world, the protection against this invisible enemy is our priority, and the most efficient way of fighting against it is to wear a face mask properly. Unfortunately, not everyone is wearing masks correctly, which is why a face mask detection platform has been developed. Its goal is to predict whether someone is wearing a face mask correctly, incorrectly, or not at all.
+               The performance of this system relies on a model built <span class="card-text-span">using deep learning, which has been trained on a large dataset of images containing people with and without masks</span>. The model can accurately identify and locate masks within an image or video stream and then checks whether the mask is being <span class="card-text-span">worn correctly, such as covering the nose and mouth.</span> This allows the system to determine whether an individual is complying with mask-wearing guidelines and alert them if they are not.
+               It is important to note that wearing a face mask correctly is mandatory for our safety. A proper way of wearing a face mask is demonstrated below:
+               Wash your hands thoroughly with soap and water or alcohol-based hand sanitizer before putting on the mask.
+               Cover your mouth, nose, and chin with the mask, ensuring that there are no gaps between the mask and your face.
+               Avoid touching the mask while wearing it.
+               If the mask becomes damp or wet, replace it with a new one.
+               Remove the mask by touching the ear loops or ties, and avoid touching the front of the mask.
+               Wash your hands thoroughly with soap and water or alcohol-based hand sanitizer after removing the mask.
+               By following these guidelines and using a proper-improper face mask detection system using <span class="card-text-span">YOLOv5 and OpenCV</span>, we can help prevent the spread of infectious diseases and protect our health and safety.
+            </p>
+         </div>
+         <img src="static/way.jpg" class="card-img-top" style=border:0cap;" alt="about">
+      </div>
+      <section id="services">
+         <div class="container">
+            <h1 class="text-center mb-5">Our Services</h1>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="card">
+                     <div class="card-body">
+                        <h2 class="card-title" id="upload-picture">Upload Picture</h2>
+                        <p class="card-text">This site detects if people in the uploaded picture are wearing a face mask correctly, incorrectly or not. Besides the number of faces on the video of people wearing a face mask correctly or not will be displayed.</p>
+                        <form action="/upload-image" >
+                           <button type="submit" class="btn btn-primary">Get Started</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="static/img2.jpg" alt="Upload Picture" class="img-fluid">
+               </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-md-6">
+                  <img src="static/vvv.jpg" alt="Take Image from Webcam" class="img-fluid" style="width: 50%;margin-top: 120px;margin-left:70px">
+               </div>
+               <div class="col-md-6">
+                  <div class="card">
+                     <div class="card-body">
+                        <h2 class="card-title" id="webcam">Live Detection using webcam</h2>
+                        <p class="card-text">This site detects if people in the live-video stream are wearing a face mask correctly, incorrectly or not. Besides the number of faces on the video of people wearing a face mask correctly or not will be displayed.</p>
+                        <form action="/opencam">
+                           <button type="submit" class="btn btn-primary">Get Started</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-md-6">
+                  <div class="card">
+                     <div class="card-body">
+                        <h2 class="card-title">Insert Image URL</h2>
+                        <p class="card-text">This site detects if people in the URL of the image uploaded are wearing a face mask correctly, incorrectly or not. Besides the number of faces on the video of people wearing a face mask correctly or not will be displayed.</p>
+                        <form action="/UploadURLImage" method="post">
+                           <button type="submit" class="btn btn-primary">Get Started</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="static/kkk.jpg" alt="Insert Image URL" class="img-fluid">
+               </div>
+            </div>
+         </div>
+      </section>
+      <div id="cases" class="container">
+         <h1 class="text-center mb-5">Use Cases</h1>
+         <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 mb-5">
+               <div class="cases-card">
+                  <img class="img-case img-fluid rounded-top" src="static/ddd.jpg" alt="Hospital">
+                  <div class="card-body">
+                     <h2 class="card-title text-center">Hospitals</h2>
+                     <p class="card-text">Using Face Mask Detection System, Hospitals can monitor if their staff is wearing masks during their shift or not. If any health worker is found without a mask, they will receive a notification with a reminder to wear a mask. Also, if quarantine people who are required to wear a mask, the system can keep an eye and detect if the mask is present or not and send notification automatically or report to the authorities.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+               <div class="cases-card">
+                  <img class="img-case img-fluid rounded-top" src="static/xxxx.jpg" alt="Airport">
+                  <div class="card-body">
+                     <h2 class="card-title text-center">Airports</h2>
+                     <p class="card-text">The Face Mask Detection System can be used at airports to detect travelers without masks. Face data of travelers can be captured in the system at the entrance. If a traveler is found to be without a face mask, their picture is sent to the airport authorities so that they could take quick action. If the person’s face is already stored, like the face of an Airport worker, it can send the alert to the worker’s phone directly.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+               <div class="cases-card">
+                  <img class="img-case img-fluid rounded-top" src="static/dss.jpg" alt="Office">
+                  <div class="card-body">
+                     <h2 class="card-title text-center">Offices</h2>
+                     <p class="card-text">The Face Mask Detection System can be used at office premises to detect if employees are maintaining safety standards at work. It monitors employees without masks and sends them a reminder to wear a mask. The reports can be downloaded or sent an email at the end of the day to capture people who are not complying with the regulations or the requirements.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card bg-light contact-card" id="contact">
+         <div class="card-body">
+            <h5 class="card-title">Contact Us</h5>
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item"><i class="bi bi-telephone-fill me-2"></i>+91-7017636775</li>
+               <li class="list-group-item"><i class="bi bi-envelope-fill me-2"></i> face.detector@gmail.com</li>
+               <li class="list-group-item">
+                  <div class="d-flex">
+                     <i class="bi bi-github me-2"></i>
+                     <a href="#" class="me-3">Github</a>
+                  </div>
+               </li>
+            </ul>
+            <p class="card-text mt-3">
+               <span class="made-with-love">Made with <i class="bi bi-heart-fill text-danger heart"></i> by Varnika Chauhan, Vaibhavi Srivastava, Aakanksha Vats, Pratham Goel.</span>
+            </p>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   </body>
+</html>

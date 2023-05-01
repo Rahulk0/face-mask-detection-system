@@ -1,0 +1,26 @@
+
+
+
+
+body.loading video {
+    filter: grayscale(1) brightness(0.25);
+}
+
+
+
+
+
+
+#fps {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#fps:empty {
+    display: none;
+}
+
+#fps:after {
+    content: " fps";
+}
