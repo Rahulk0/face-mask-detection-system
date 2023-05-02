@@ -23,18 +23,9 @@ With the increasing number of COVID-19 victims, integrating systems capable of d
 ## ⚙️ HOW THE SYSTEM WORKS?
 
 This system is a mask detection project that detects face mask on people'face. This flask web app detects if someone is wearing a face mask correctly, incorrectly or not.
-This system retrieves an image uploaded extract the faces detected in the image, feed each face into a yolov5 model weight `best.pt` which outputs a tuple composed of 3 values. The first value indicates the probability of no mask, the second value is the probability of a correct mask and the last one is the probability of the incorrect mask.
-In the output picture, ach face is bordered by the color indicating his situation (No mask, Correct, Incorrect).
-This website is built from scratch with HTML and CSS deployed to Flask use yourlaptop to test.
-
-<br><br>
-
-
-<br><br>
-
-## ⚙️ HOW THE SYSTEM WORKS?
-
-This system is a mask detection project that detects face mask on people'face. This flask web app detects if someone is wearing a face mask correctly, incorrectly or not.
 This system retrieves an image uploaded extract the faces detected in the image, feed each face into a serialized model `mask_detector.h5` which outputs a tuple composed of 3 values. The first value indicates the probability of no mask, the second value is the probability of a correct mask and the last one is the probability of the incorrect mask.
 In the output picture, ach face is bordered by the color indicating his situation (No mask, Correct, Incorrect).
-This website is built from scratch with HTML and CSS deployed to Flask use yourlaptop to test.
+This website is built from scratch with HTML and CSS deployed to Flask use your laptop to test.
+
+
+
