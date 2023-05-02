@@ -27,5 +27,7 @@ This system retrieves an image uploaded extract the faces detected in the image,
 In the output picture, ach face is bordered by the color indicating his situation (No mask, Correct, Incorrect).
 This website is built from scratch with HTML and CSS deployed to Flask use yourlaptop to test.
 
+<br><br>
+
 ##⚡️ How the System Works?
 The Face Mask Detection System is a Flask web app that detects face masks on individuals' faces. The system retrieves an uploaded image, extracts the faces detected in the image, and feeds each face into a serialized model mask_detector.h5. The model outputs a tuple containing the probability of no mask, the probability of a correct mask, and the probability of an incorrect mask. Each face in the output image is bordered by a color indicating the situation (No mask, Correct, or Incorrect). The website is built from scratch with HTML and CSS deployed to Flask.
