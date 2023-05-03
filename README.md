@@ -49,6 +49,9 @@ Now, run the following command in your Terminal/Command Prompt to install the li
 
 ```$ pip3 install -r r.txt```
 
+To run the flask application
+
+```$ flask --app app run```
 
 
 ## 👏 And it's done!
